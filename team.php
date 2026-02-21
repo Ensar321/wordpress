@@ -40,6 +40,26 @@ get_header()    ;?>
             <?php if ($role):?>
                 <p class = 'team-role'><?php echo esc_html($role);?></p>
             <?php endif;?>
+             
+            <?php if(has_excpert)()   :?>
+                <p class ='team-bio'><?php the_excerpt();?></p>
+                <?php elseif(shortbio): ?>
+                    <p class='team-bio'><?php echo(esc_html($shortbio));?></p>
+                    <?php endif;?>
+
+                    <?php if($email || $linkedin):?>
+                        <p class ='team-links'>
+                            <?php if($email): ?><a href='mailto:<?php echo antispambot($email);?>'>Email</a><?php endif;?>
+                                <?php ($linkedin):?><a href='<?php echo esc_irl($linkedin);?>'target='_blank' rel='noopener'>Linkedin</a><?php endif;?>
+                            </p>
+                            <?php endif;?>
+                            </div>
+                            </li>
+                            <?php endwile;?>
+                            <ul>
+                                <?php else;?>
+                                <p>No team members yet  Add posts in the 'TEAM 'category</p>
+                                <
 
 
 
