@@ -13,7 +13,7 @@
          </a>
 
          <?php if (get_bloginfo('description'));?>
-         <p class = "sote-taline"><?php bloginfo('description');?></p>
+         <p class = "site-tagline"><?php bloginfo('description');?></p>
          <?php endif;?>
 
          <nav class = 'site-nav'>
